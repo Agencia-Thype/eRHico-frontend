@@ -1,0 +1,125 @@
+main
+    width: 100%
+.banner
+    width: 100%
+    height: 100vh
+    padding: 150px 5%
+    background: #1D3C51
+    display: flex
+    justify-content: space-between
+    div
+        width: 40%
+    figure
+        width: 60%
+.services 
+    width: 100%
+    height: 100vh
+    background: #1D3D52
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.gallery 
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.img-box 
+    width: 100px
+    height: 500px
+    margin: 12px
+    border-radius: 50px
+    background: url("../../assets/img/authentic-small-youthful-marketing-agency.jpg")
+    background-size: cover
+    background-position: center
+    position: relative
+    transition: width 0.5s
+
+
+.img-box:nth-child(2)
+    background: url("../../assets/img/working-together-young-cheerful-afro-american-woman-using-laptop-discussing-something-with.jpg")
+    background-size: cover
+    background-position: center
+
+.img-box:nth-child(3)
+    background: url("../../assets/img/team-working-together-project.jpg")
+    background-size: cover
+    background-position: center
+
+
+.img-box:nth-child(4)
+    background: url("../../assets/img/tablet-people-portrait-coworking-project-tech-office-company-as-team-group-diversity-collaboration-corporate-digital-agency-deadline-development-as-colleagues.jpg")
+    background-size: cover
+    background-position: center
+
+
+.img-box h3 
+    color: #fff
+    position: absolute
+    bottom: 0
+    left: 33px
+    opacity: 0
+    transition: bottom 0.5s, opacity 0.5s
+    -webkit-transition: bottom 0.5s, opacity 0.5s
+    -moz-transition: bottom 0.5s, opacity 0.5s
+    -ms-transition: bottom 0.5s, opacity 0.5s
+    -o-transition: bottom 0.5s, opacity 0.5s
+    font-size: 24px
+    span
+        color: #66d6ea
+
+.img-box p
+    color: #fff
+    position: absolute
+    bottom: 0
+    left: 33px
+    width: 250px
+    height: 30px
+    opacity: 0
+    transition: bottom 0.5s, opacity 0.5s
+    -webkit-transition: bottom 0.5s, opacity 0.5s
+    -moz-transition: bottom 0.5s, opacity 0.5s
+    -ms-transition: bottom 0.5s, opacity 0.5s
+    -o-transition: bottom 0.5s, opacity 0.5s
+    text-overflow: ellipsis
+    overflow: hidden
+    display: -webkit-box    
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2 
+
+.img-box button
+    color: #000
+    background: #66d6ea
+    position: absolute
+    bottom: 0
+    left: 33px
+    width: 95px
+    height: 30px
+    opacity: 0
+    transition: bottom 0.5s, opacity 0.5s
+    -webkit-transition: bottom 0.5s, opacity 0.5s
+    -moz-transition: bottom 0.5s, opacity 0.5s
+    -ms-transition: bottom 0.5s, opacity 0.5s
+    -o-transition: bottom 0.5s, opacity 0.5s
+    font-weight: 700
+
+
+.img-box:hover 
+    width: 500px
+    cursor: pointer
+
+
+
+.img-box:hover h3
+    opacity: 1
+    bottom: 100px
+
+.img-box:hover p
+    opacity: 1
+    bottom: 70px
+
+.img-box:hover button
+    opacity: 1
+    bottom: 30px

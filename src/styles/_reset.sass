@@ -1,0 +1,48 @@
+@use './variables'
+
+:root
+    width: 100%
+    font-size: 60%
+    font-family: variables.$default-font
+    // background: variables.$secondary-color
+
+@media (min-width: 700px)
+:root
+    font-size: 62.5%
+    
+
+*
+    margin: 0
+    padding: 0
+    outline: 0
+    box-sizing: border-box
+    border: none
+
+body,
+html
+    min-width: 100vw
+    min-height: 100vh
+
+body
+    -webkit-font-smoothing: antialiased
+    overflow-x: hidden
+    
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong
+    font-weight: 500
+
+button
+    cursor: pointer
+    text-decoration: none
+ul,
+li
+    list-style: none
+
+a
+    text-decoration: none
