@@ -263,3 +263,86 @@ main
     .image-section img
       max-width: 100%
       margin: 0 auto
+
+
+/* Nova Seção de Texto com Scroll Vertical */
+.scrolling-section-vertical
+  background-color: #002e4f
+  color: #ffffff
+  overflow: hidden
+  height: 550px // Altura ajustada para ser semelhante às outras seções
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  gap: 30px // Espaçamento menor entre os textos
+
+  .scrolling-item
+    position: relative
+    width: 100%
+    max-width: 600px
+    margin: 0 auto
+    text-align: left
+    animation-duration: 10s
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+
+    .text-with-bar
+      position: relative
+      margin-bottom: 10px
+
+      .white-bar
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 100px
+        height: 10px
+        background-color: #ffffff
+        z-index: 1
+
+      h2
+        position: relative
+        margin: 0 0 0 120px // Espaço para a faixa branca
+        font-size: 36px // Aumentado para destacar o título
+        font-weight: bold
+        color: #ffffff
+        z-index: 2
+
+    p
+      font-size: 18px // Aumentado para dar mais destaque
+      line-height: 1.7
+      color: #ffffff
+      margin: 10px 0
+
+  // Animações específicas para cada texto
+  .mission
+    animation-name: scroll-right-to-left
+
+  .vision
+    animation-name: scroll-left-to-right
+
+  .values
+    animation-name: scroll-right-to-left-2
+
+// Animação: direita para esquerda
+@keyframes scroll-right-to-left
+  0%
+    transform: translateX(100%)
+  100%
+    transform: translateX(-100%)
+
+// Animação: esquerda para direita
+@keyframes scroll-left-to-right
+  0%
+    transform: translateX(-100%)
+  100%
+    transform: translateX(100%)
+
+// Animação alternativa para o terceiro item
+@keyframes scroll-right-to-left-2
+  0%
+    transform: translateX(120%)
+  100%
+    transform: translateX(-120%)
+
