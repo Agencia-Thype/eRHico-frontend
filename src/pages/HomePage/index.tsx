@@ -7,7 +7,7 @@ const HomePage = () => {
     <main>
         <Header/>
         <section className="banner">
-          <div>
+          <div className="apply">
             <h1>TENHA ACESSO AS <span>MELHORES VAGAS</span></h1>
             <h2>E FAÇA SEU FUTURO DE SUCESSO</h2>
             <p>Apoie o crescimento da sua empresa com soluções de RH inovadoras</p>
