@@ -5,6 +5,7 @@ import "./home.sass";
 const HomePage = () => {
   return (
     <main>
+
       <Header />
 
       {/* Banner Section */}
@@ -145,6 +146,8 @@ const HomePage = () => {
           </p>
         </div>
       </section>
+
+
     </main>
   );
 };
