@@ -147,6 +147,26 @@ const HomePage = () => {
         </div>
       </section>
 
+      <section className="business-section">
+  <div className="business-content">
+    <div className="image-container">
+    
+      <img src="../src/assets/img/imagem03.png" alt="Imagem representativa" />
+    </div>
+    <div className="text-container">
+      <h1>
+        IMPULSIONAMOS <br />
+        <span>NEGÓCIOS</span>
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <button>ENTRE EM CONTATO</button>
+    </div>
+  </div>
+</section>
+
+
 
     </main>
   );
