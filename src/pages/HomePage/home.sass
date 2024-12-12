@@ -123,3 +123,87 @@ main
 .img-box:hover button
     opacity: 1
     bottom: 30px
+
+
+
+.recruitment-info
+  background-color: #002e4f  
+  color: #ffffff
+
+  .info-cards
+    display: flex
+    justify-content: center
+    gap: 2px
+    margin-bottom: 40px
+
+    .card
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: black
+      border-radius: 8px
+      width: 660px
+      height: 280px
+      text-align: center
+      padding: 15px
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+
+      img
+        width: 90px
+        height: 110px
+        margin-bottom: 10px
+
+      h3
+        font-size: 32px
+        color: #00cfff
+        margin-bottom: 5px
+
+      p
+        font-size: 28px
+        color: #ffffff
+
+  .main-content
+    display: flex
+    align-items: center
+    
+
+    .text-section
+      flex: 1
+      text-align: center
+
+      h2
+        font-size: 34px
+        color: #00cfff
+        margin-bottom: 20px
+
+      h1
+        font-size: 42px
+        font-weight: 700
+        line-height: 1.5
+        word-break: break-word
+
+        span
+          color: #00cfff
+
+    .image-section
+      flex: 2.5
+      margin: 0 
+      padding: 0 
+      img
+        width: 100%
+        max-width: 1000px
+        border-radius: 8px
+        object-fit: cover 
+        display: block
+        margin: 0 
+        padding: 0 padding
+        float: right 
+
+@media (max-width: 768px)
+  .main-content
+    flex-direction: column
+    text-align: center
+
+    .image-section img
+      max-width: 100%
+      margin: 0 auto
