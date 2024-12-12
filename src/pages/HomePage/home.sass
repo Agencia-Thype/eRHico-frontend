@@ -157,10 +157,227 @@ main
     opacity: 1
     bottom: 30px
 
-@keyframes anim
-    0%
-        transform: translateX(0%)
-    
-    100%
-        transform: translateX(-100%)
-    
+
+
+.recruitment-info
+  background-color: #002e4f  
+  color: #ffffff
+ 
+
+  .info-cards
+    display: flex
+    justify-content: center
+    gap: 2px
+    margin-bottom: 40px
+
+    .card
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: black
+      width: 660px
+      height: 280px
+      text-align: center
+      padding: 15px
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+
+      img
+        width: 90px
+        height: 110px
+        margin-bottom: 10px
+
+      h3
+        font-size: 36px
+        color: #00cfff
+        margin-bottom: 5px
+
+      p
+        font-size: 32px
+        color: #ffffff
+
+  .main-content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 20px
+
+    .text-section
+      flex: 1
+      text-align: center
+      width: 35%
+      margin-left: 110px
+
+      h2
+        font-size: 46px
+        color: #00cfff
+        margin-bottom: 20px
+
+      h1
+        font-size: 58px
+        font-weight: 700
+        line-height: 1.5
+        word-break: break-word
+
+        span
+          color: #00cfff
+
+    .image-section
+      flex: 2.5
+      width: 70%
+      margin: 0 
+      padding: 0 
+      img
+        width: 100%
+        max-width: 1000px
+        border-radius: 8px
+        object-fit: cover 
+        display: block
+        margin: 0 
+        padding: 0
+        float: right
+
+/* Responsividade */
+@media (max-width: 1024px)
+  .info-cards
+    flex-wrap: wrap
+    justify-content: center
+    gap: 20px
+
+    .card
+      width: 48% // Dois cards por linha
+      height: auto
+
+  .main-content
+    flex-direction: column
+    gap: 40px
+
+    .text-section
+      width: 100%
+      margin: 0 auto
+      text-align: center
+
+      h2
+        font-size: 36px // Reduz o tamanho do subtítulo
+        margin-bottom: 15px
+
+      h1
+        font-size: 48px // Reduz o tamanho do título
+        line-height: 1.4
+
+    .image-section img
+      max-width: 100%
+      margin: 0 auto
+
+@media (max-width: 768px)
+  .info-cards
+    .card
+      width: 100% // Um card por linha
+
+  .main-content
+    flex-direction: column
+    gap: 20px
+    text-align: center
+
+    .text-section
+      text-align: center
+      width: 100%
+
+      h2
+        font-size: 28px // Ainda menor para telas pequenas
+        margin-bottom: 10px
+
+      h1
+        font-size: 32px // Ajusta o título para telas pequenas
+        line-height: 1.3
+        margin-bottom: 10px
+
+      p
+        font-size: 18px // Reduz tamanho do parágrafo para telas pequenas
+
+    .image-section img
+      max-width: 100%
+      margin: 0 auto
+
+
+/* Nova Seção de Texto com Scroll Vertical */
+.scrolling-section-vertical
+  background-color: #002e4f
+  color: #ffffff
+  overflow: hidden
+  height: 550px // Altura ajustada para ser semelhante às outras seções
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  gap: 30px // Espaçamento menor entre os textos
+
+  .scrolling-item
+    position: relative
+    width: 100%
+    max-width: 600px
+    margin: 0 auto
+    text-align: left
+    animation-duration: 10s
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+
+    .text-with-bar
+      position: relative
+      margin-bottom: 10px
+
+      .white-bar
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 100px
+        height: 10px
+        background-color: #ffffff
+        z-index: 1
+
+      h2
+        position: relative
+        margin: 0 0 0 120px // Espaço para a faixa branca
+        font-size: 36px // Aumentado para destacar o título
+        font-weight: bold
+        color: #ffffff
+        z-index: 2
+
+    p
+      font-size: 18px // Aumentado para dar mais destaque
+      line-height: 1.7
+      color: #ffffff
+      margin: 10px 0
+
+  // Animações específicas para cada texto
+  .mission
+    animation-name: scroll-right-to-left
+
+  .vision
+    animation-name: scroll-left-to-right
+
+  .values
+    animation-name: scroll-right-to-left-2
+
+// Animação: direita para esquerda
+@keyframes scroll-right-to-left
+  0%
+    transform: translateX(100%)
+  100%
+    transform: translateX(-100%)
+
+// Animação: esquerda para direita
+@keyframes scroll-left-to-right
+  0%
+    transform: translateX(-100%)
+  100%
+    transform: translateX(100%)
+
+// Animação alternativa para o terceiro item
+@keyframes scroll-right-to-left-2
+  0%
+    transform: translateX(120%)
+  100%
+    transform: translateX(-120%)
+
+
