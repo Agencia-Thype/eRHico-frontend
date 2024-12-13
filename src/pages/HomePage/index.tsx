@@ -181,7 +181,7 @@ const HomePage = () => {
             <div className="testimonials">
               <div className="testimonial">
                 <div className="image-container">
-                  <img src="../src/assets/img/imagem02.png" alt="Laura Smith" />
+                  <img src="../src/assets/img/Story01.jpg" alt="Laura Smith" />
                 </div>
                 <div className="text-content">
                   <span className="quote">“</span>
@@ -197,7 +197,7 @@ const HomePage = () => {
               </div>
               <div className="testimonial">
                 <div className="image-container">
-                  <img src="../src/assets/img/imagem03.png" alt="Smith Laura" />
+                  <img src="../src/assets/img/Story02.jpg" alt="Smith Laura" />
                 </div>
                 <div className="text-content">
                   <span className="quote">“</span>

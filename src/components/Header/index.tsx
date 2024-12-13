@@ -18,8 +18,7 @@ const Header = () => {
 
         window.addEventListener("scroll", handleScroll);
 
-        // Limpa o listener ao desmontar o componente
-        return () => {
+              return () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
@@ -38,7 +37,7 @@ const Header = () => {
                 <li><a href="">CONVENÇÃO</a></li>
                 <li><a href="">BLOG</a></li>
                 <li><a href="">PORTAL</a></li>
-                <li><a href="">CONTATO</a></li>
+                <li><a href="/contato">CONTATO</a></li>
 
             </ul>
             <button onClick={() => navigate("/franquia")}>SEJA UM FRANQUEADO</button>
