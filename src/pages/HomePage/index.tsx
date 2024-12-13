@@ -5,12 +5,11 @@ import "./home.sass";
 const HomePage = () => {
   return (
     <main>
-
       <Header />
 
       {/* Banner Section */}
       <section className="banner">
-        <div>
+        <div className="apply">
           <h1>
             TENHA ACESSO AS <span>MELHORES VAGAS</span>
           </h1>
@@ -148,79 +147,80 @@ const HomePage = () => {
       </section>
 
       <section className="business-section">
-  <div className="business-content">
-    <div className="image-container">
-    
-      <img src="../src/assets/img/imagem03.png" alt="Imagem representativa" />
-    </div>
-    <div className="text-container">
-      <h1>
-        IMPULSIONAMOS <br />
-        <span>NEGÓCIOS</span>
-      </h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <button>ENTRE EM CONTATO</button>
-    </div>
-  </div>
-</section>
-
-<section className="franchise-section">
-  <div className="franchise-banner">
-    <div className="banner-text">
-      <h1>SEJA UM FRANQUEADO</h1>
-      <p>faça parte dessa história.</p>
-      <button>ENTRE EM CONTATO</button>
-    </div>
-  </div>
-
-  <div className="success-stories">
-    <h2>CASES DE SUCESSO</h2>
-    <div className="carousel">
-      <button className="arrow left">‹</button>
-      <div className="testimonials">
-        <div className="testimonial">
+        <div className="business-content">
           <div className="image-container">
-            <img src="../src/assets/img/imagem02.png" alt="Laura Smith" />
+            <img
+              src="../src/assets/img/imagem03.png"
+              alt="Imagem representativa"
+            />
           </div>
-          <div className="text-content">
-            <span className="quote">“</span>
-            <p className="description">
+          <div className="text-container">
+            <h1>
+              IMPULSIONAMOS <br />
+              <span>NEGÓCIOS</span>
+            </h1>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse.
+              ipsum suspendisse sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <span className="quote-close">”</span>
-            <h3>LAURA SMITH</h3>
-            <p className="role">DIRETORA EXECUTIVA</p>
+            <button>ENTRE EM CONTATO</button>
           </div>
         </div>
-        <div className="testimonial">
-          <div className="image-container">
-            <img src="../src/assets/img/imagem02.png" alt="Smith Laura" />
-          </div>
-          <div className="text-content">
-            <span className="quote">“</span>
-            <p className="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse.
-            </p>
-            <span className="quote-close">”</span>
-            <h3>SMITH LAURA</h3>
-            <p className="role">DIRETORA EXECUTIVA</p>
+      </section>
+
+      <section className="franchise-section">
+        <div className="franchise-banner">
+          <div className="banner-text">
+            <h1>SEJA UM FRANQUEADO</h1>
+            <p>faça parte dessa história.</p>
+            <button>ENTRE EM CONTATO</button>
           </div>
         </div>
-      </div>
-      <button className="arrow right">›</button>
-    </div>
-  </div>
-</section>
 
-
-
-
+        <div className="success-stories">
+          <h2>CASES DE SUCESSO</h2>
+          <div className="carousel">
+            <button className="arrow left">‹</button>
+            <div className="testimonials">
+              <div className="testimonial">
+                <div className="image-container">
+                  <img src="../src/assets/img/imagem02.png" alt="Laura Smith" />
+                </div>
+                <div className="text-content">
+                  <span className="quote">“</span>
+                  <p className="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis ipsum suspendisse.
+                  </p>
+                  <span className="quote-close">”</span>
+                  <h3>LAURA SMITH</h3>
+                  <p className="role">DIRETORA EXECUTIVA</p>
+                </div>
+              </div>
+              <div className="testimonial">
+                <div className="image-container">
+                  <img src="../src/assets/img/imagem03.png" alt="Smith Laura" />
+                </div>
+                <div className="text-content">
+                  <span className="quote">“</span>
+                  <p className="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis ipsum suspendisse.
+                  </p>
+                  <span className="quote-close">”</span>
+                  <h3>SMITH LAURA</h3>
+                  <p className="role">DIRETORA EXECUTIVA</p>
+                </div>
+              </div>
+            </div>
+            <button className="arrow right">›</button>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
