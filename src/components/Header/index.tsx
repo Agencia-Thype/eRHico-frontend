@@ -1,26 +1,30 @@
 import { useEffect, useState } from "react";
-import "../../styles/_reset.sass"
-import "./header.sass"
+import { useNavigate } from "react-router-dom"; 
+import "../../styles/_reset.sass";
+import "./header.sass";
+
 const Header = () => {
     const [isSticky, setIsSticky] = useState(false);
+    const navigate = useNavigate(); // Inicializa o hook useNavigate
 
     useEffect(() => {
         const handleScroll = () => {
-        if (window.scrollY > 20) {
-            setIsSticky(true);
-        } else {
-            setIsSticky(false);
-        }
-    };
+            if (window.scrollY > 20) {
+                setIsSticky(true);
+            } else {
+                setIsSticky(false);
+            }
+        };
 
-    // Adiciona o listener de evento de scroll
-    window.addEventListener("scroll", handleScroll);
+       
+        window.addEventListener("scroll", handleScroll);
 
-    // Limpa o listener ao desmontar o componente
-    return () => {
-        window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+        // Limpa o listener ao desmontar o componente
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <nav className={`header ${isSticky ? "sticky" : ""}`}>
             <figure>
@@ -35,9 +39,10 @@ const Header = () => {
                 <li>PORTAL</li>
                 <li>CONTATO</li>
             </ul>
-            <button>SEJA UM FRANQUEADO</button>
+           
+            <button onClick={() => navigate("/franquia")}>SEJA UM FRANQUEADO</button>
         </nav>
-  )
-}
+    );
+};
 
-export default Header
+export default Header;
