@@ -49,7 +49,8 @@ nav
     position: relative
     width: 100%
     height: 100vh
-    background-image: linear-gradient(to right, #1d3c51, #0D0E12)
+    background-color: #17c0e2
+    
     overflow: hidden
 
 .slider::before
@@ -59,7 +60,7 @@ nav
     content: ''
     top: 0
     left: 0
-    background-color: #17c0e2
+    background-image: linear-gradient(to right, #1d3c51, #0D0E12)
 
 .title
     position: absolute
@@ -69,8 +70,7 @@ nav
     color: #fff
     font-size: 150px
     width: 40%
-    font-family: "Pirata One", system-ui
-    font-weight: 400
+    font-family: 'Pacifico', cursive
     font-style: normal
     text-shadow: 3px 5px 0px #478860
     line-height: .9em
@@ -97,8 +97,9 @@ nav
     rotate: calc(60deg * var(--i))
 
 .images .item img
-    height: 420px
-
+    background: #97e9fa
+    height: 320px
+    border-radius: 50%
 
 .content
     color: #fff
@@ -109,14 +110,14 @@ nav
     width: 350px
 
 .content h1
-    color: #17c0e2
+    color: #1d3c51
     font-size: xxx-large
 
 .content button
     margin-top: 30px
     padding: 10px 30px
     border-radius: 20px
-    background-color: #17c0e2
+    background-color: #1d3c51
     color: #fff
     border: none
     float: right
@@ -142,6 +143,8 @@ nav
 .content .item.active .des
     opacity: 0
     animation: showContent 0.5s 0.3s ease-in-out 1 forwards
+    font-size: 16px
+    font-weight: 200
 
 .content .item.active button
     opacity: 0

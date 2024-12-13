@@ -40,7 +40,7 @@ const Footer = () => {
                 <li><a href="">Política de Privacidade</a></li>
             </ul>
         </div>
-        <p>Copyright ₢ 2024 eRHico Recursos Humanos. Todos os direitos reservados</p>
+        <p>Copyright © 2024 eRHico Recursos Humanos. Todos os direitos reservados</p>
     </div>
   )
 }

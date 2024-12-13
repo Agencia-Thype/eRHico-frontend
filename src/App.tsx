@@ -12,7 +12,7 @@ const App = () => {
         rel="noopener noreferrer"
       >
         <img
-          src="../src/assets/icons/whatsapp-icon.png" // Adicione o ícone do WhatsApp na pasta de ícones
+          src="../src/assets/img/whatsapp.png" // Adicione o ícone do WhatsApp na pasta de ícones
           alt="WhatsApp"
         />
       </a>

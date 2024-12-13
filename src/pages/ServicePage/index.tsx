@@ -8,12 +8,13 @@ const ServicePage = () => {
   const imageRef = useRef<HTMLDivElement>(null);
 
   const items = [
-    { name: "SERVICE NAME 1", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/1.PNG" },
-    { name: "SERVICE NAME 2", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/2.PNG" },
-    { name: "SERVICE NAME 3", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/3.PNG" },
-    { name: "SERVICE NAME 4", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/4.PNG" },
-    { name: "SERVICE NAME 5", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/5.PNG" },
-    { name: "SERVICE NAME 6", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/6.PNG" },
+    { name: "ANÁLISE E ELABORAÇÃO CURRICULAR", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/headhunting.png" },
+    { name: "TRADUÇÃO DE CURRÍCULOS", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/translation.png" },
+    { name: "Treinamento para Entrevistas", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/meeting-room.png" },
+    { name: "Orientação Vocacional", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/advice.png" },
+    { name: "ORIENTAÇÃO DE CARREIRA", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/direction.png" },
+    { name: "COACHING", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/lecture.png" },
+    // { name: "Mapeamento Comportamental DISC", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", img: "./src/assets/img/behavioral.png" },
   ];
 
   const countItem = items.length;
