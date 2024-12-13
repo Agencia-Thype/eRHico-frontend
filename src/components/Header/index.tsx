@@ -16,7 +16,6 @@ const Header = () => {
             }
         };
 
-       
         window.addEventListener("scroll", handleScroll);
 
         // Limpa o listener ao desmontar o componente
@@ -27,11 +26,15 @@ const Header = () => {
 
     return (
         <nav className={`header ${isSticky ? "sticky" : ""}`}>
-            <figure>
+            {/* Torna o logo um botão */}
+            <figure onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
                 <img src="..\src\assets\img\eRHico-logo.png" alt="Logo" />
             </figure>
             <ul className="menu">
-                <li>HOME</li>
+                {/* Torna o li HOME um botão */}
+                <li onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
+                    HOME
+                </li>
                 <li>SERVIÇOS</li>
                 <li>CARREIRAS</li>
                 <li>CONVENÇÃO</li>
@@ -39,7 +42,6 @@ const Header = () => {
                 <li>PORTAL</li>
                 <li>CONTATO</li>
             </ul>
-           
             <button onClick={() => navigate("/franquia")}>SEJA UM FRANQUEADO</button>
         </nav>
     );
