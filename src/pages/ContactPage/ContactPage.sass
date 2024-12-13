@@ -1,0 +1,82 @@
+.contact-page
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: calc(100vh - 80px) // Subtrai a altura do Header
+  background-color: #002e4f
+  color: #ffffff
+  padding: 20px
+
+  .contact-container
+    background-color: #003e63
+    padding: 40px
+    border-radius: 10px
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    max-width: 600px
+    width: 100%
+
+    h1
+      font-size: 36px
+      color: #00cfff
+      margin-bottom: 20px
+
+    p
+      font-size: 16px
+      margin-bottom: 20px
+
+    form
+      display: flex
+      flex-direction: column
+      gap: 20px
+
+      .input-group
+        display: flex
+        flex-direction: column
+        gap: 10px
+
+        input, textarea
+          padding: 10px
+          font-size: 16px
+          border: 1px solid #00cfff
+          border-radius: 5px
+          background-color: #002e4f
+          color: #ffffff
+
+          &::placeholder
+            color: #ffffff
+
+      button
+        padding: 12px 20px
+        background-color: #00cfff
+        color: #000
+        font-size: 16px
+        font-weight: bold
+        border: none
+        border-radius: 5px
+        cursor: pointer
+        transition: background-color 0.3s ease
+
+        &:hover
+          background-color: #008bb0
+
+.whatsapp-float
+  position: fixed
+  bottom: 20px
+  right: 20px
+  width: 60px
+  height: 60px
+  background-color: #25d366
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+  z-index: 1000
+  transition: transform 0.3s ease
+
+  &:hover
+    transform: scale(1.1)
+
+  img
+    width: 32px
+    height: 32px
