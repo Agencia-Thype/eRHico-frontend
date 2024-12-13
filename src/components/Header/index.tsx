@@ -31,13 +31,13 @@ const Header = () => {
                 <img src="..\src\assets\img\eRHico-logo.png" alt="Logo" />
             </figure>
             <ul className="menu">
-                <li>HOME</li>
-                <li>SERVIÇOS</li>
-                <li>CARREIRAS</li>
-                <li>CONVENÇÃO</li>
-                <li>BLOG</li>
-                <li>PORTAL</li>
-                <li>CONTATO</li>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/servicos">SERVIÇOS</a></li>
+                <li><a href="">CARREIRAS</a></li>
+                <li><a href="">CONVENÇÃO</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">PORTAL</a></li>
+                <li><a href="">CONTATO</a></li>
             </ul>
            
             <button onClick={() => navigate("/franquia")}>SEJA UM FRANQUEADO</button>

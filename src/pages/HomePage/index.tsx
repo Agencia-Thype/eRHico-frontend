@@ -28,23 +28,17 @@ const HomePage = () => {
       <section className="recruitment-info">
         <div className="info-cards">
           <div className="card">
-            <img src="../src/assets/icons/store-icon.png" alt="Unidades" />
+            <img src="../src/assets/img/Objeto-Vetor2.png" alt="Unidades" />
             <h3>+200 unidades</h3>
             <p>OPERANDO</p>
           </div>
           <div className="card">
-            <img
-              src="../src/assets/icons/experience-icon.png"
-              alt="Anos de mercado"
-            />
+            <img src="../src/assets/img/Objeto-Vetor.png" alt="Anos de mercado"/>
             <h3>Quase 20 ANOS</h3>
             <p>de mercado</p>
           </div>
           <div className="card">
-            <img
-              src="../src/assets/icons/impact-icon.png"
-              alt="Pessoas impactadas"
-            />
+            <img src="../src/assets/img/Objeto-Vetor3.png" alt="Pessoas impactadas"/>
             <h3>+15 MILHÕES</h3>
             <p>de pessoas impactadas</p>
           </div>
