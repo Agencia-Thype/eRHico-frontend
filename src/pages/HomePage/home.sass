@@ -483,3 +483,131 @@ main
 
     p
       font-size: 16px
+
+
+.franchise-section
+  width: 100%
+
+  .franchise-banner
+    background: url('../src/assets/img/imagem04.png') no-repeat center
+    background-size: cover
+    color: #002e4f
+    padding: 50px 5%
+    text-align: left
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 300px
+
+    .banner-text
+      max-width: 500px
+
+      h1
+        font-size: 48px
+        font-weight: 700
+        margin-bottom: 10px
+
+      p
+        font-size: 20px
+        margin-bottom: 20px
+        margin-left:20%
+
+      button
+        background-color: #002e4f
+        color: #ffffff
+        padding: 10px 20px
+        border: none
+        border-radius: 5px
+        font-size: 16px
+        cursor: pointer
+        transition: background-color 0.3s ease
+        margin-left:20%
+
+        &:hover
+          background-color: #001f3b
+
+  .success-stories
+    background-color: #002e4f
+    color: #ffffff
+    padding: 50px 5%
+
+    h2
+      text-align: center
+      font-size: 36px
+      margin-bottom: 30px
+   
+      font-weight: 700
+
+    .carousel
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+
+      .arrow
+        background: none
+        border: none
+        color: #00cfff
+        font-size: 36px
+        cursor: pointer
+        margin: 0 10px
+
+        &:hover
+          color: #ffffff
+
+      .testimonials
+        display: flex
+        gap: 30px
+        overflow-x: auto
+        scroll-snap-type: x mandatory
+
+        .testimonial
+          display: flex
+          align-items: center
+          background-color: transparent
+          padding: 10px
+          width: 550px
+          scroll-snap-align: center
+
+          .image-container
+            flex: none
+            img
+              width: 125px
+              height: 125px
+              border-radius: 100% 
+              object-fit: cover
+              margin-right: 20px 
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) 
+
+          .text-content
+            flex: 1
+            position: relative
+
+            .quote
+              font-size: 40px
+              color: #00cfff
+              position: absolute
+              top: -10px
+              left: -10px
+
+            .quote-close
+              font-size: 40px
+              color: #00cfff
+              position: absolute
+              bottom: -10px
+              right: -10px
+
+            h3
+              font-size: 20px
+              font-weight: 700
+              margin-top: 10px
+
+            .role
+              font-size: 14px
+              font-style: italic
+              color: #00cfff
+              margin-bottom: 10px
+
+            .description
+              font-size: 16px
+              line-height: 1.5

@@ -166,6 +166,59 @@ const HomePage = () => {
   </div>
 </section>
 
+<section className="franchise-section">
+  <div className="franchise-banner">
+    <div className="banner-text">
+      <h1>SEJA UM FRANQUEADO</h1>
+      <p>faça parte dessa história.</p>
+      <button>ENTRE EM CONTATO</button>
+    </div>
+  </div>
+
+  <div className="success-stories">
+    <h2>CASES DE SUCESSO</h2>
+    <div className="carousel">
+      <button className="arrow left">‹</button>
+      <div className="testimonials">
+        <div className="testimonial">
+          <div className="image-container">
+            <img src="../src/assets/img/imagem02.png" alt="Laura Smith" />
+          </div>
+          <div className="text-content">
+            <span className="quote">“</span>
+            <p className="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse.
+            </p>
+            <span className="quote-close">”</span>
+            <h3>LAURA SMITH</h3>
+            <p className="role">DIRETORA EXECUTIVA</p>
+          </div>
+        </div>
+        <div className="testimonial">
+          <div className="image-container">
+            <img src="../src/assets/img/imagem02.png" alt="Smith Laura" />
+          </div>
+          <div className="text-content">
+            <span className="quote">“</span>
+            <p className="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse.
+            </p>
+            <span className="quote-close">”</span>
+            <h3>SMITH LAURA</h3>
+            <p className="role">DIRETORA EXECUTIVA</p>
+          </div>
+        </div>
+      </div>
+      <button className="arrow right">›</button>
+    </div>
+  </div>
+</section>
+
+
 
 
     </main>
