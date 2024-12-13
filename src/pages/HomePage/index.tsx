@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import "../../styles/_reset.sass";
 import "./home.sass";
@@ -215,6 +216,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </main>
   );
 };

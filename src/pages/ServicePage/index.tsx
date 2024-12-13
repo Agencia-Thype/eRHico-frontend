@@ -44,7 +44,7 @@ const ServicePage = () => {
     <main>
         <Header />
         <div className="slider">
-            <div className="title">Services!</div>
+            <div className="title">Serviços!</div>
             <div className="images" ref={imageRef}>
             {items.map((item, index) => (
                 <div
